@@ -1,6 +1,6 @@
 {
     "name": "dynamic-ajax-popup",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A customizable popup modal with AJAX form submission and dynamic content loading.",
     "main": "src/popup.js",
     "keywords": [
