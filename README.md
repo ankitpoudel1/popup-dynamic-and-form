@@ -17,7 +17,7 @@ A flexible and customizable popup modal package that supports static content, fo
 First, install the package via npm:
 
 ```bash
-npm install custom-popup
+npm install dynamic-ajax-popup
 ```
 
 
@@ -28,7 +28,7 @@ npm install custom-popup
 To create a simple popup with static content:
 
 ```javascript
-import Popup from 'custom-popup';
+import Popup from 'dynamic-ajax-popup';
 
 // Create a new instance of Popup
 const myPopup = new Popup({
@@ -61,7 +61,7 @@ In your HTML:
 You can add a form to your popup and handle form submission via AJAX. A callback function can be passed to handle post-submission actions.
 
 ```javascript
-import Popup from 'custom-popup';
+import Popup from 'dynamic-ajax-popup';
 
 // Define a callback function to execute after successful form submission
 function onFormSuccess(response) {
@@ -106,12 +106,29 @@ In your HTML:
 <button id="openFormPopup">Open Form Popup</button>
 ```
 
+How to Import CSS:
+
+To style the popup correctly, you need to import the accompanying CSS file. You can do this either in your HTML file or in your JavaScript file (if your environment supports it).
+
+Option 1: Import in HTML
+In your HTML file, include the following line in the <head> section:
+
+```html
+<link rel="stylesheet" href="./node_modules/dynamic-ajax-popup/src/popup.css">
+```
+Option 2: Import in JavaScript
+If your environment supports it (e.g., using a bundler like Webpack), you can also import the CSS directly in your JavaScript file:
+
+```javascript
+import 'dynamic-ajax-popup/src/popup.css';
+```
+
 ### Popup with Network-Fetched Content
 
 The popup can also load content dynamically from a network request.
 
 ```javascript
-import Popup from 'custom-popup';
+import Popup from 'dynamic-ajax-popup';
 
 // Create a popup that fetches content from a URL when opened
 const networkPopup = new Popup({
