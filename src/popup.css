@@ -1,0 +1,34 @@
+.popup-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Default background, customizable */
+    z-index: 1; /* Default z-index */
+  }
+  
+  .popup-modal-content {
+    background-color: #fff; /* Default background color */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .popup-close {
+    color: #aaa; /* Default close button color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .popup-close:hover,
+  .popup-close:focus {
+    color: #000; /* Close button hover effect */
+    text-decoration: none;
+  }
+  

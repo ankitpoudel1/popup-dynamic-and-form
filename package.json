@@ -1,0 +1,17 @@
+{
+    "name": "custom-popup",
+    "version": "1.0.0",
+    "description": "A customizable popup/modal library.",
+    "main": "dist/popup.js",
+    "author": "Ankit Poudel",
+    "license": "MIT",
+    "scripts": {
+      "build": "webpack --config webpack.config.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "webpack": "^5.0.0",
+      "webpack-cli": "^4.0.0"
+    }
+  }
+  
