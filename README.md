@@ -16,23 +16,10 @@ A flexible and customizable popup modal package that supports static content, fo
 
 First, install the package via npm:
 
-\`\`\`bash
+```bash
 npm install custom-popup
-\`\`\`
+```
 
-### Linking (for development):
-
-Alternatively, you can use \`npm link\` for development. In your package directory:
-
-\`\`\`bash
-npm link
-\`\`\`
-
-In your project directory:
-
-\`\`\`bash
-npm link custom-popup
-\`\`\`
 
 ## Usage
 
@@ -40,7 +27,7 @@ npm link custom-popup
 
 To create a simple popup with static content:
 
-\`\`\`javascript
+```javascript
 import Popup from 'custom-popup';
 
 // Create a new instance of Popup
@@ -61,19 +48,19 @@ const myPopup = new Popup({
 document.getElementById('openPopupButton').onclick = () => {
   myPopup.showPopup();
 };
-\`\`\`
+```
 
 In your HTML:
 
-\`\`\`html
+```html
 <button id="openPopupButton">Open Popup</button>
-\`\`\`
+```
 
 ### Popup with Form Submission
 
 You can add a form to your popup and handle form submission via AJAX. A callback function can be passed to handle post-submission actions.
 
-\`\`\`javascript
+```javascript
 import Popup from 'custom-popup';
 
 // Define a callback function to execute after successful form submission
@@ -111,19 +98,19 @@ const formPopup = new Popup({
 document.getElementById('openFormPopup').onclick = () => {
   formPopup.showPopup();
 };
-\`\`\`
+```
 
 In your HTML:
 
-\`\`\`html
+```html
 <button id="openFormPopup">Open Form Popup</button>
-\`\`\`
+```
 
 ### Popup with Network-Fetched Content
 
 The popup can also load content dynamically from a network request.
 
-\`\`\`javascript
+```javascript
 import Popup from 'custom-popup';
 
 // Create a popup that fetches content from a URL when opened
@@ -145,13 +132,13 @@ const networkPopup = new Popup({
 document.getElementById('openNetworkPopup').onclick = () => {
   networkPopup.showPopup();
 };
-\`\`\`
+```
 
 In your HTML:
 
-\`\`\`html
+```html
 <button id="openNetworkPopup">Open Network Content Popup</button>
-\`\`\`
+```
 
 ## Popup Options
 
@@ -159,23 +146,23 @@ In your HTML:
 
 | Option               | Type     | Default                            | Description |
 |----------------------|----------|------------------------------------|-------------|
-| \`modalId\`            | String   | \`''\`                               | The unique ID for the popup modal. |
-| \`contentTitle\`       | String   | \`''\`                               | The title of the popup. |
-| \`contentText\`        | String   | \`''\`                               | Static content for the popup body. |
-| \`formAction\`         | String   | \`null\`                             | The URL to which the form will be submitted. |
-| \`formMethod\`         | String   | \`'POST'\`                           | The HTTP method for the form submission. |
-| \`formHTML\`           | String   | \`''\`                               | The custom HTML for the form inside the popup. |
-| \`onSuccess\`          | Function | \`null\`                             | A callback function triggered after successful form submission. |
-| \`fetchUrl\`           | String   | \`null\`                             | The URL to fetch dynamic content from when the popup is opened. |
-| \`width\`              | String   | \`'80%'\`                            | The width of the popup. |
-| \`height\`             | String   | \`'auto'\`                           | The height of the popup. |
-| \`zIndex\`             | String   | \`'1'\`                              | The z-index of the popup modal. |
-| \`modalBackgroundColor\` | String | \`'rgba(0, 0, 0, 0.5)'\`             | The background color of the modal overlay. |
-| \`contentBackgroundColor\` | String | \`'#fff'\`                         | The background color of the popup content. |
-| \`closeButtonVisible\` | Boolean  | \`true\`                             | Whether the close button is visible. |
-| \`closeButtonColor\`   | String   | \`'#aaa'\`                           | The color of the close button. |
-| \`overlayClickClose\`  | Boolean  | \`true\`                             | Whether clicking the overlay closes the popup. |
-| \`openAnimation\`      | String   | \`null\`                             | Animation for opening the popup (e.g., \`'fade'\`). |
+| `modalId`            | String   | `''`                               | The unique ID for the popup modal. |
+| ``contentTitle``       | String   | ``''``                               | The title of the popup. |
+| ``contentText``        | String   | ``''``                               | Static content for the popup body. |
+| ``formAction``         | String   | ``null``                             | The URL to which the form will be submitted. |
+| ``formMethod``         | String   | ``'POST'``                           | The HTTP method for the form submission. |
+| ``formHTML``           | String   | ``''``                               | The custom HTML for the form inside the popup. |
+| ``onSuccess``          | Function | ``null``                             | A callback function triggered after successful form submission. |
+| ``fetchUrl``           | String   | ``null``                             | The URL to fetch dynamic content from when the popup is opened. |
+| ``width``              | String   | ``'80%'``                            | The width of the popup. |
+| ``height``             | String   | ``'auto'``                           | The height of the popup. |
+| ``zIndex``             | String   | ``'1'``                              | The z-index of the popup modal. |
+| ``modalBackgroundColor`` | String | ``'rgba(0, 0, 0, 0.5)'``             | The background color of the modal overlay. |
+| ``contentBackgroundColor`` | String | ``'#fff'``                         | The background color of the popup content. |
+| ``closeButtonVisible`` | Boolean  | ``true``                             | Whether the close button is visible. |
+| ``closeButtonColor``   | String   | ``'#aaa'``                           | The color of the close button. |
+| ``overlayClickClose``  | Boolean  | ``true``                             | Whether clicking the overlay closes the popup. |
+| ``openAnimation``      | String   | ``null``                             | Animation for opening the popup (e.g., ``'fade'``). |
 
 ## License
 
