@@ -1,4 +1,4 @@
-# Custom Popup Package
+# Dynamic Ajax Popup
 
 A flexible and customizable popup modal package that supports static content, form submission, and dynamic content loading via network requests. This package allows you to pass custom HTML for forms, handle AJAX-based form submissions, and execute callbacks on successful form submission.
 
